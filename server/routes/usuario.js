@@ -13,7 +13,6 @@ const app = express()
 
 app.get('/usuario', verificaToken, (req, res) => {
 
-
     let desde = req.query.desde || 0;
 
     desde = Number(desde);
